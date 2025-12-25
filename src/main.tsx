@@ -8,6 +8,7 @@ import { routeTree } from "./routeTree.gen";
 import reportWebVitals from "./reportWebVitals.ts";
 import { AuthProvider } from "@/providers/auth-provider.tsx";
 import { useAuth } from "@/hooks/useAuth.ts";
+import AppThemeProvider from "@/providers/theme-provider.tsx";
 
 // Create a new router instance
 const router = createRouter({
@@ -47,7 +48,9 @@ if (rootElement && !rootElement.innerHTML) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<StrictMode>
-			<App />
+			<AppThemeProvider>
+				<App />
+			</AppThemeProvider>
 		</StrictMode>,
 	);
 }

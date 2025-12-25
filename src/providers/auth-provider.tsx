@@ -7,7 +7,7 @@ const localStorageKey = "myreads.auth.user";
 
 export interface AuthContext {
 	isAuthenticated: boolean;
-	login: (username: string) => Promise<void>;
+	login: (username: string, password: string) => Promise<void>;
 	logout: () => Promise<void>;
 	user: string | null;
 }
@@ -51,7 +51,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 		// setStoredToken(null);
 	}, []);
 
-	const login = useCallback(async (username: string) => {
+	// @ts-ignore // Password is mock
+	const login = useCallback(async (username: string, password: string) => {
 		await mockApiFetch(500);
 		setStoredUser(username);
 		setUser(username);
