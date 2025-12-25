@@ -5,8 +5,8 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import TextField from "@mui/material/TextField";
-import { Controller, type FieldErrors } from "react-hook-form";
-import type { Control } from "react-hook-form";
+import { Controller } from "react-hook-form";
+import type { Control, FieldErrors } from "react-hook-form";
 import type { LoginFormData } from "@/routes/login.tsx";
 import PasswordInput from "@/components/PasswordInput.tsx";
 

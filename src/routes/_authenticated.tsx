@@ -1,5 +1,6 @@
 import { Outlet, createFileRoute, redirect } from "@tanstack/react-router";
 import type { AuthContext } from "@/providers/auth-provider.tsx";
+import AppLayout from "@/components/AppLayout.tsx";
 
 export const Route = createFileRoute("/_authenticated")({
 	beforeLoad: (ctx) => {
@@ -10,5 +11,9 @@ export const Route = createFileRoute("/_authenticated")({
 			});
 		}
 	},
-	component: () => <Outlet />,
+	component: () => (
+		<AppLayout>
+			<Outlet />
+		</AppLayout>
+	),
 });
