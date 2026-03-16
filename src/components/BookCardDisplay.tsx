@@ -4,15 +4,12 @@ import {
 	Card,
 	CardContent,
 	Chip,
-	Divider,
-	Drawer,
 	IconButton,
 	Menu,
 	MenuItem,
-	Stack,
 	Typography,
 } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import * as React from "react";
 import type { Book } from "@/api/booksApi.ts";
@@ -20,11 +17,15 @@ import BookImageDisplay from "@/components/BookImageDisplay.tsx";
 
 interface BookShortDisplayProps {
 	book: Book;
+	handleCardClick: (book: Book) => void;
 }
 
-export default function BookCardDisplay({ book }: BookShortDisplayProps) {
+export default function BookCardDisplay({
+	book,
+	handleCardClick,
+}: BookShortDisplayProps) {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-	const [drawerOpen, setDrawerOpen] = useState(false);
+
 	const menuOpen = Boolean(anchorEl);
 
 	const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -34,14 +35,6 @@ export default function BookCardDisplay({ book }: BookShortDisplayProps) {
 
 	const handleMenuClose = () => {
 		setAnchorEl(null);
-	};
-
-	const handleCardClick = () => {
-		setDrawerOpen(true);
-	};
-
-	const handleDrawerClose = () => {
-		setDrawerOpen(false);
 	};
 
 	const imageUrl =
@@ -67,7 +60,7 @@ export default function BookCardDisplay({ book }: BookShortDisplayProps) {
 						boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
 					},
 				}}
-				onClick={handleCardClick}
+				onClick={(_) => handleCardClick(book)}
 			>
 				<BookImageDisplay imageUrl={imageUrl} title={book.title} />
 
@@ -221,16 +214,6 @@ export default function BookCardDisplay({ book }: BookShortDisplayProps) {
 				<MenuItem onClick={handleMenuClose}>Mark as read</MenuItem>
 				<MenuItem onClick={handleMenuClose}>Add to favorites</MenuItem>
 			</Menu>
-
-			{/* Side Drawer with Full Book Info */}
-			<Drawer
-				anchor="right"
-				open={drawerOpen}
-				onClose={handleDrawerClose}
-				onClick={(e) => e.stopPropagation()}
-			>
-				<BookDetails />
-			</Drawer>
 		</>
 	);
 }

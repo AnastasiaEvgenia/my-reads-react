@@ -11,9 +11,11 @@ import BookCardDisplay from "@/components/BookCardDisplay.tsx";
 export default function Shelf({
 	title,
 	books = [],
+	handleCardClick,
 }: {
 	title: string;
 	books: Array<Book>;
+	handleCardClick: (book: Book) => void;
 }) {
 	return (
 		<Accordion defaultExpanded>
@@ -32,7 +34,10 @@ export default function Shelf({
 								size={{ xs: 12, sm: 6, md: 4, lg: 3 }}
 								key={book.id}
 							>
-								<BookCardDisplay book={book} />
+								<BookCardDisplay
+									book={book}
+									handleCardClick={handleCardClick}
+								/>
 							</Grid>
 						))}
 					</Grid>
