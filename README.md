@@ -35,7 +35,14 @@ The main page displays three shelves:
 - **Want to Read**
 - **Read**
 
-Each book has a menu that lets you move it between shelves. Clicking on a book opens a quick details drawer with more information about it. The main page also links to a **search page** (`/search`) where you can find new books by title or author. Books found in search show their current shelf status if already in your library — you can add or move them directly from search. Navigating back to the main page instantly reflects any changes made during search.
+### Features
+
+- **Move books between shelves** — use the menu on each book card to change its shelf
+- **Drag and drop** — drag a book and drop it directly onto another shelf
+- **Book details** — click any book to open a quick details drawer with more information
+- **Search** — find new books by title or author via the search page (`/search`)
+- **Shelf status in search** — books already in your library show their current shelf in search results
+- **Instant sync** — navigating back to the main page immediately reflects all changes made in search
 
 ## Built With
 
@@ -47,5 +54,6 @@ Each book has a menu that lets you move it between shelves. Clicking on a book o
 | [TanStack Query](https://tanstack.com/query) | Server state & caching |
 | [Material UI v7](https://mui.com/) | Component library |
 | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) | Form handling & validation |
+| [dnd-kit](https://dndkit.com/) | Drag and drop |
 | [Notistack](https://notistack.com/) | Notifications |
 | [Vite](https://vitejs.dev/) | Build tool |
