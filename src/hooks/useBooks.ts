@@ -1,33 +1,37 @@
-import { queryOptions, useSuspenseQuery } from "@tanstack/react-query";
 import { useMemo } from "react";
-import { getAll } from "@/api/booksApi.ts";
+import { useBooksQuery } from "@/api/queries.ts";
 
 export const useBooks = () => {
-	const postsQueryOptions = queryOptions({
-		queryKey: ["books"],
-		queryFn: () => getAll(),
-	});
-	const allBooks = useSuspenseQuery(postsQueryOptions);
-	const booksData = allBooks.data;
+	const {
+		data: allBooks = [],
+		isLoading,
+		isError,
+		error,
+		refetch,
+	} = useBooksQuery();
 
 	const currentlyReadingBooks = useMemo(
-		() => booksData.filter((f) => f.shelf === "currentlyReading"),
-		[booksData],
+		() => allBooks.filter((f) => f.shelf === "currentlyReading"),
+		[allBooks],
 	);
 
 	const wantToReadBooks = useMemo(
-		() => booksData.filter((f) => f.shelf === "wantToRead"),
-		[booksData],
+		() => allBooks.filter((f) => f.shelf === "wantToRead"),
+		[allBooks],
 	);
 
 	const readBooks = useMemo(
-		() => booksData.filter((f) => f.shelf === "read"),
-		[booksData],
+		() => allBooks.filter((f) => f.shelf === "read"),
+		[allBooks],
 	);
 
 	return {
 		currentlyReadingBooks,
 		wantToReadBooks,
 		readBooks,
+		isLoading,
+		isError,
+		error,
+		refetch,
 	};
 };

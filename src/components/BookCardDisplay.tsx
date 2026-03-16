@@ -5,8 +5,6 @@ import {
 	CardContent,
 	Chip,
 	IconButton,
-	Menu,
-	MenuItem,
 	Typography,
 } from "@mui/material";
 
@@ -14,6 +12,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import * as React from "react";
 import type { Book } from "@/api/booksApi.ts";
 import BookImageDisplay from "@/components/BookImageDisplay.tsx";
+import { BookMenu } from "@/components/BookMenu.tsx";
 
 interface BookShortDisplayProps {
 	book: Book;
@@ -204,16 +203,12 @@ export default function BookCardDisplay({
 			</Card>
 
 			{/* Menu */}
-			<Menu
+			<BookMenu
+				menuOpen={menuOpen}
+				book={book}
 				anchorEl={anchorEl}
-				open={menuOpen}
-				onClose={handleMenuClose}
-				onClick={(e) => e.stopPropagation()}
-			>
-				<MenuItem onClick={handleMenuClose}>Move to shelf</MenuItem>
-				<MenuItem onClick={handleMenuClose}>Mark as read</MenuItem>
-				<MenuItem onClick={handleMenuClose}>Add to favorites</MenuItem>
-			</Menu>
+				handleMenuClose={handleMenuClose}
+			/>
 		</>
 	);
 }

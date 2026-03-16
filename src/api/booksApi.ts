@@ -71,10 +71,10 @@ export const getAll = (): Promise<Array<Book>> =>
 		.then((data: { books: Array<Book> }) => data.books);
 
 export const update = (
-	book: { id: string } | string,
+	bookId: string,
 	shelf: Shelf | string,
 ): Promise<unknown> =>
-	fetch(`${api}/books/${typeof book === "string" ? book : book.id}`, {
+	fetch(`${api}/books/${bookId}`, {
 		method: "PUT",
 		headers: {
 			...headers,

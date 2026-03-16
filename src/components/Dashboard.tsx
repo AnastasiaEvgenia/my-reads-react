@@ -5,9 +5,11 @@ import type { Book } from "@/api/booksApi.ts";
 import { useBooks } from "@/hooks/useBooks.ts";
 import Shelf from "@/components/Shelf.tsx";
 import { BookDetails } from "@/components/BookDetails.tsx";
+import { SkeletonLoader } from "@/components/SkeletonLoader.tsx";
 
 export default function Dashboard() {
-	const { wantToReadBooks, currentlyReadingBooks, readBooks } = useBooks();
+	const { wantToReadBooks, currentlyReadingBooks, readBooks, isLoading } =
+		useBooks();
 	const [drawer, setDrawer] = useState<{ open: boolean; book: Book | null }>({
 		open: false,
 		book: null,
@@ -31,25 +33,37 @@ export default function Dashboard() {
 		<Box>
 			<Grid container spacing={2}>
 				<Grid size={12}>
-					<Shelf
-						title={"Currently Reading"}
-						books={currentlyReadingBooks}
-						handleCardClick={handleCardClick}
-					/>
+					{isLoading ? (
+						<SkeletonLoader />
+					) : (
+						<Shelf
+							title={"Currently Reading"}
+							books={currentlyReadingBooks}
+							handleCardClick={handleCardClick}
+						/>
+					)}
 				</Grid>
 				<Grid size={12}>
-					<Shelf
-						title={"Want To Read"}
-						books={wantToReadBooks}
-						handleCardClick={handleCardClick}
-					/>
+					{isLoading ? (
+						<SkeletonLoader />
+					) : (
+						<Shelf
+							title={"Want To Read"}
+							books={wantToReadBooks}
+							handleCardClick={handleCardClick}
+						/>
+					)}
 				</Grid>
 				<Grid size={12}>
-					<Shelf
-						title={"Read"}
-						books={readBooks}
-						handleCardClick={handleCardClick}
-					/>
+					{isLoading ? (
+						<SkeletonLoader />
+					) : (
+						<Shelf
+							title={"Read"}
+							books={readBooks}
+							handleCardClick={handleCardClick}
+						/>
+					)}
 				</Grid>
 			</Grid>
 			{/* Side Drawer with Full Book Info */}
