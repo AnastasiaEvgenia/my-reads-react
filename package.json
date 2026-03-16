@@ -1,5 +1,6 @@
 {
 	"name": "my-reads",
+	"homepage": "https://anastasiaevgenia.github.io/my-reads-react/",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -11,7 +12,7 @@
 		"typecheck": "tsc --noEmit",
 		"format": "prettier",
 		"check": "prettier --write . && eslint --fix",
-		"deploy": "npm run build && copy dist\\index.html dist\\404.html && gh-pages -d dist"
+		"deploy": "npm run build && gh-pages -d dist --dotfiles"
 	},
 	"dependencies": {
 		"@emotion/styled": "^11.14.1",
