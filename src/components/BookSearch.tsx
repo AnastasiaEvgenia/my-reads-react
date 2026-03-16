@@ -35,7 +35,10 @@ export function BookSearch() {
 								size={{ xs: 12, sm: 6, md: 4, lg: 3 }}
 								key={book.id}
 							>
-								<BookCardDisplay book={book} />
+								<BookCardDisplay
+									book={book}
+									displayNoneOption={true}
+								/>
 							</Grid>
 						))}
 						{booksList.length === 0 && (

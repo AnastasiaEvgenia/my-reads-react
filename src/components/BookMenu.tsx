@@ -5,6 +5,7 @@ import {
 	CheckBoxOutlineBlankOutlined,
 	CheckBoxOutlined,
 } from "@mui/icons-material";
+import { Backdrop, CircularProgress } from "@mui/material";
 import type { Book, Shelf } from "@/api/booksApi.ts";
 import { useUpdateBookMutation } from "@/api/mutations.ts";
 
@@ -13,6 +14,7 @@ interface BookMenuProps {
 	anchorEl: HTMLElement | null;
 	menuOpen: boolean;
 	handleMenuClose: () => void;
+	displayNoneOption: boolean;
 }
 
 const ShelfSelectedIcon = () => (
@@ -24,7 +26,8 @@ const ShelfNotSelectedIcon = () => (
 );
 
 export function BookMenu(props: BookMenuProps) {
-	const { book, anchorEl, menuOpen, handleMenuClose } = props;
+	const { book, anchorEl, menuOpen, handleMenuClose, displayNoneOption } =
+		props;
 	const updateBookMutation = useUpdateBookMutation();
 	const moveTo = async (shelf: Shelf) => {
 		try {
@@ -41,50 +44,68 @@ export function BookMenu(props: BookMenuProps) {
 		}
 	};
 	return (
-		<Menu
-			anchorEl={anchorEl}
-			open={menuOpen}
-			onClose={handleMenuClose}
-			onClick={(e) => e.stopPropagation()}
-		>
-			<MenuItem
-				onClick={(_) => moveTo("currentlyReading")}
-				disabled={
-					updateBookMutation.isPending ||
-					book.shelf === "currentlyReading"
-				}
+		<>
+			<Menu
+				anchorEl={anchorEl}
+				open={menuOpen}
+				onClose={handleMenuClose}
+				onClick={(e) => e.stopPropagation()}
 			>
-				{book.shelf === "currentlyReading" ? (
-					<ShelfSelectedIcon />
-				) : (
-					<ShelfNotSelectedIcon />
+				<MenuItem
+					onClick={(_) => moveTo("currentlyReading")}
+					disabled={
+						updateBookMutation.isPending ||
+						book.shelf === "currentlyReading"
+					}
+				>
+					{book.shelf === "currentlyReading" ? (
+						<ShelfSelectedIcon />
+					) : (
+						<ShelfNotSelectedIcon />
+					)}
+					Currently Reading
+				</MenuItem>
+				<MenuItem
+					onClick={(_) => moveTo("wantToRead")}
+					disabled={
+						updateBookMutation.isPending ||
+						book.shelf === "wantToRead"
+					}
+				>
+					{book.shelf === "wantToRead" ? (
+						<ShelfSelectedIcon />
+					) : (
+						<ShelfNotSelectedIcon />
+					)}
+					Add to wishlist
+				</MenuItem>
+				<MenuItem
+					onClick={(_) => moveTo("read")}
+					disabled={
+						updateBookMutation.isPending || book.shelf === "read"
+					}
+				>
+					{book.shelf === "read" ? (
+						<ShelfSelectedIcon />
+					) : (
+						<ShelfNotSelectedIcon />
+					)}
+					Mark as read
+				</MenuItem>
+				{displayNoneOption && (
+					<MenuItem disabled={true}>
+						{!book.shelf || book.shelf === "none" ? (
+							<ShelfSelectedIcon />
+						) : (
+							<ShelfNotSelectedIcon />
+						)}
+						None
+					</MenuItem>
 				)}
-				Currently Reading
-			</MenuItem>
-			<MenuItem
-				onClick={(_) => moveTo("wantToRead")}
-				disabled={
-					updateBookMutation.isPending || book.shelf === "wantToRead"
-				}
-			>
-				{book.shelf === "wantToRead" ? (
-					<ShelfSelectedIcon />
-				) : (
-					<ShelfNotSelectedIcon />
-				)}
-				Add to wishlist
-			</MenuItem>
-			<MenuItem
-				onClick={(_) => moveTo("read")}
-				disabled={updateBookMutation.isPending || book.shelf === "read"}
-			>
-				{book.shelf === "read" ? (
-					<ShelfSelectedIcon />
-				) : (
-					<ShelfNotSelectedIcon />
-				)}
-				Mark as read
-			</MenuItem>
-		</Menu>
+			</Menu>
+			<Backdrop open={updateBookMutation.isPending}>
+				<CircularProgress color="inherit" />
+			</Backdrop>
+		</>
 	);
 }

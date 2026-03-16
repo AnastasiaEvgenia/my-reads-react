@@ -16,7 +16,13 @@ import BookImageDisplay from "@/components/BookImageDisplay.tsx";
 import { BookMenu } from "@/components/BookMenu.tsx";
 import { DrawerContext } from "@/components/AppLayout.tsx";
 
-export default function BookCardDisplay({ book }: { book: Book }) {
+export default function BookCardDisplay({
+	book,
+	displayNoneOption,
+}: {
+	book: Book;
+	displayNoneOption: boolean;
+}) {
 	const { handleCardClick } = useContext(DrawerContext);
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -40,7 +46,7 @@ export default function BookCardDisplay({ book }: { book: Book }) {
 		book.imageLinks?.thumbnail || book.imageLinks?.smallThumbnail || null;
 
 	return (
-		<Box ref={ref}>
+		<Box ref={ref} sx={{ height: "100%" }}>
 			<Card
 				sx={{
 					height: "100%",
@@ -204,6 +210,7 @@ export default function BookCardDisplay({ book }: { book: Book }) {
 
 			{/* Menu */}
 			<BookMenu
+				displayNoneOption={displayNoneOption}
 				menuOpen={menuOpen}
 				book={book}
 				anchorEl={anchorEl}
