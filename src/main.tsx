@@ -17,6 +17,7 @@ const queryClient = new QueryClient();
 
 const router = createRouter({
 	routeTree,
+	basepath: "/my-reads-react",
 	context: {
 		auth: undefined!,
 		queryClient,
