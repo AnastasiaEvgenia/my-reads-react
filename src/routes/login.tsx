@@ -3,15 +3,13 @@ import Container from "@mui/material/Container";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import type { AuthContext } from "@/providers/auth-provider.tsx";
 import type { SubmitHandler } from "react-hook-form";
 import { useAuth } from "@/hooks/useAuth.ts";
 import LoginForm from "@/components/LoginForm.tsx";
 
 export const Route = createFileRoute("/login")({
 	beforeLoad: (ctx) => {
-		const context = ctx.context as AuthContext;
-		if (context.isAuthenticated) {
+		if (ctx.context.auth.isAuthenticated) {
 			throw redirect({ to: "/" });
 		}
 	},

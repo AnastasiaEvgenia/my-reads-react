@@ -1,19 +1,52 @@
 const api = "https://reactnd-books-api.udacity.com";
 
-interface ImageLinks {
-	smallThumbnail?: string;
-	thumbnail?: string;
+export type Shelf = "currentlyReading" | "wantToRead" | "read" | "none";
+
+export interface IndustryIdentifier {
+	type: string; // "ISBN_13" or "ISBN_10"
+	identifier: string; // "9781593273897"
 }
 
-type Shelf = "currentlyReading" | "wantToRead" | "read" | "none";
+export interface ReadingModes {
+	text: boolean; // true
+	image: boolean; // false
+}
+
+export interface PanelizationSummary {
+	containsEpubBubbles: boolean; // false
+	containsImageBubbles: boolean; // false
+}
+
+export interface ImageLinks {
+	smallThumbnail?: string; // "http://books.google.com/books/content?id=...&zoom=5"
+	thumbnail?: string; // "http://books.google.com/books/content?id=...&zoom=1"
+}
 
 export interface Book {
-	id: string;
-	title: string;
-	authors?: Array<string>;
-	imageLinks?: ImageLinks;
-	shelf?: Shelf;
-	[key: string]: unknown;
+	id: string; // "nggnmAEACAAJ"
+	title: string; // "The Linux Command Line"
+	subtitle?: string; // "A Complete Introduction"
+	authors?: Array<string>; // ["William E. Shotts, Jr."]
+	publisher?: string; // "No Starch Press"
+	publishedDate?: string; // "2012"
+	description?: string; // "You've experienced the shiny, point-and-click surface..."
+	industryIdentifiers?: Array<IndustryIdentifier>; // [{ type: "ISBN_13", identifier: "9781593273897" }]
+	readingModes?: ReadingModes; // { text: true, image: false }
+	pageCount?: number; // 480
+	printType?: string; // "BOOK"
+	categories?: Array<string>; // ["COMPUTERS"]
+	averageRating?: number; // 4
+	ratingsCount?: number; // 2
+	maturityRating?: string; // "NOT_MATURE"
+	allowAnonLogging?: boolean; // true
+	contentVersion?: string; // "1.2.2.0.preview.2"
+	panelizationSummary?: PanelizationSummary; // { containsEpubBubbles: false, containsImageBubbles: false }
+	imageLinks?: ImageLinks; // { smallThumbnail: "http://...", thumbnail: "http://..." }
+	language?: string; // "en"
+	previewLink?: string; // "http://books.google.com/books?id=..."
+	infoLink?: string; // "https://play.google.com/store/books/details?id=..."
+	canonicalVolumeLink?: string; // "https://market.android.com/details?id=book-..."
+	shelf?: Shelf; // "currentlyReading"
 }
 
 type HeadersObject = Record<string, string>;
