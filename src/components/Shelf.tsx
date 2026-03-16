@@ -21,6 +21,7 @@ export default function Shelf({
 }) {
 	const { ref, isDropTarget } = useDroppable({
 		id,
+		accept: (source) => source.data?.shelf !== id,
 	});
 	return (
 		<Box

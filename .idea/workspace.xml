@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="docs: Update ReadMe.md with project description, libraries used and installation guide.">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="build">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BookCardDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookCardDisplay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Shelf.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shelf.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +105,7 @@
   <component name="RecapUselessUpdatesCounter">
     <option name="suspendCountdown" value="9" />
   </component>
-  <component name="RunManager" selected="npm.typecheck">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -159,10 +158,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.typecheck" />
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.typecheck" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -184,7 +183,7 @@
       <workItem from="1773091363178" duration="300000" />
       <workItem from="1773650784329" duration="634000" />
       <workItem from="1773676153759" duration="16301000" />
-      <workItem from="1773692863054" duration="3150000" />
+      <workItem from="1773692863054" duration="3835000" />
     </task>
     <task id="LOCAL-00001" summary="fix: Quick book details display.">
       <option name="closed" value="true" />
@@ -290,7 +289,31 @@
       <option name="project" value="LOCAL" />
       <updated>1773694582110</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: Drag n Drop functionality to move books between shelves.">
+      <option name="closed" value="true" />
+      <created>1773696112461</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1773696112461</updated>
+    </task>
+    <task id="LOCAL-00015" summary="docs: Update ReadMe with drag n drop functionality.">
+      <option name="closed" value="true" />
+      <created>1773696276297</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1773696276297</updated>
+    </task>
+    <task id="LOCAL-00016" summary="build">
+      <option name="closed" value="true" />
+      <created>1773696336303</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1773696336303</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,12 +326,14 @@
     <MESSAGE value="feat: Fab button to navigate to search page." />
     <MESSAGE value="feat: Display current book shelf in card menu." />
     <MESSAGE value="feat: Search new books." />
-    <MESSAGE value="build" />
     <MESSAGE value="chore: Github pages configuration." />
     <MESSAGE value="chore: Github pages configuration. (2)" />
     <MESSAGE value="chore: Github pages configuration. (3)" />
     <MESSAGE value="docs: Update ReadMe.md with project description, libraries used and installation guide." />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Update ReadMe.md with project description, libraries used and installation guide." />
+    <MESSAGE value="feat: Drag n Drop functionality to move books between shelves." />
+    <MESSAGE value="docs: Update ReadMe with drag n drop functionality." />
+    <MESSAGE value="build" />
+    <option name="LAST_COMMIT_MESSAGE" value="build" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

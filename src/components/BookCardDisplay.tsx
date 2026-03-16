@@ -22,6 +22,7 @@ export default function BookCardDisplay({ book }: { book: Book }) {
 
 	const { ref } = useDraggable({
 		id: book.id,
+		data: { shelf: book.shelf },
 	});
 
 	const menuOpen = Boolean(anchorEl);

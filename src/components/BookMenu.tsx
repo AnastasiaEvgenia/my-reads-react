@@ -49,7 +49,10 @@ export function BookMenu(props: BookMenuProps) {
 		>
 			<MenuItem
 				onClick={(_) => moveTo("currentlyReading")}
-				disabled={updateBookMutation.isPending}
+				disabled={
+					updateBookMutation.isPending ||
+					book.shelf === "currentlyReading"
+				}
 			>
 				{book.shelf === "currentlyReading" ? (
 					<ShelfSelectedIcon />
@@ -60,7 +63,9 @@ export function BookMenu(props: BookMenuProps) {
 			</MenuItem>
 			<MenuItem
 				onClick={(_) => moveTo("wantToRead")}
-				disabled={updateBookMutation.isPending}
+				disabled={
+					updateBookMutation.isPending || book.shelf === "wantToRead"
+				}
 			>
 				{book.shelf === "wantToRead" ? (
 					<ShelfSelectedIcon />
@@ -71,7 +76,7 @@ export function BookMenu(props: BookMenuProps) {
 			</MenuItem>
 			<MenuItem
 				onClick={(_) => moveTo("read")}
-				disabled={updateBookMutation.isPending}
+				disabled={updateBookMutation.isPending || book.shelf === "read"}
 			>
 				{book.shelf === "read" ? (
 					<ShelfSelectedIcon />
