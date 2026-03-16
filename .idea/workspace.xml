@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="feat: Fab button to navigate to search page.">
+    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="feat: Display current book shelf in card menu.">
+      <change afterPath="$PROJECT_DIR$/src/components/BookSearch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useBookDrawer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/booksApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/booksApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/keys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/keys.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookCardDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookCardDisplay.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BookMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Shelf.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shelf.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/_authenticated/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_authenticated/search.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +35,8 @@
   </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
-      <entry key="chat-panel" value="Claude Haiku 4.5" />
-      <entry key="agent-panel" value="Claude Haiku 4.5" />
+      <entry key="chat-panel" value="Claude Sonnet 4.6" />
+      <entry key="agent-panel" value="Claude Sonnet 4.6" />
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
@@ -161,7 +172,7 @@
       <updated>1773091361833</updated>
       <workItem from="1773091363178" duration="300000" />
       <workItem from="1773650784329" duration="634000" />
-      <workItem from="1773676153759" duration="7361000" />
+      <workItem from="1773676153759" duration="13119000" />
     </task>
     <task id="LOCAL-00001" summary="fix: Quick book details display.">
       <option name="closed" value="true" />
@@ -195,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773682614078</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: Display current book shelf in card menu.">
+      <option name="closed" value="true" />
+      <created>1773683760252</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773683760252</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +225,8 @@
     <MESSAGE value="feat: Book menu. Move books between shelves." />
     <MESSAGE value="fix: Fetch books with suspense query." />
     <MESSAGE value="feat: Fab button to navigate to search page." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Fab button to navigate to search page." />
+    <MESSAGE value="feat: Display current book shelf in card menu." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Display current book shelf in card menu." />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

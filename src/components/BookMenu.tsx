@@ -32,6 +32,7 @@ export function BookMenu(props: BookMenuProps) {
 				bookId: book.id,
 				shelf: shelf,
 			});
+			handleMenuClose();
 			enqueueSnackbar("Book moved successfully!", { variant: "success" });
 		} catch (error: any) {
 			enqueueSnackbar(`Failed to move book! Error "${error?.message}"`, {

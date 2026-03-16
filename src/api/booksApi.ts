@@ -96,4 +96,18 @@ export const search = (
 		body: JSON.stringify({ query, maxResults }),
 	})
 		.then((res) => res.json())
-		.then((data: { books?: Array<Book> }) => data.books || []);
+		.then(
+			(data: {
+				books?: Array<Book> | { error: string; items: Array<Book> };
+			}) => {
+				if (
+					data.books &&
+					typeof data.books === "object" &&
+					!Array.isArray(data.books)
+				) {
+					return "error" in data.books ? [] : data.books;
+				}
+				// If books is an array, return it; otherwise return empty array
+				return Array.isArray(data.books) ? data.books : [];
+			},
+		);

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
 	Box,
 	Card,
@@ -13,16 +13,10 @@ import * as React from "react";
 import type { Book } from "@/api/booksApi.ts";
 import BookImageDisplay from "@/components/BookImageDisplay.tsx";
 import { BookMenu } from "@/components/BookMenu.tsx";
+import { DrawerContext } from "@/components/AppLayout.tsx";
 
-interface BookShortDisplayProps {
-	book: Book;
-	handleCardClick: (book: Book) => void;
-}
-
-export default function BookCardDisplay({
-	book,
-	handleCardClick,
-}: BookShortDisplayProps) {
+export default function BookCardDisplay({ book }: { book: Book }) {
+	const { handleCardClick } = useContext(DrawerContext);
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
 	const menuOpen = Boolean(anchorEl);
