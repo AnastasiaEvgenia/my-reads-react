@@ -6,6 +6,7 @@ import type { Book } from "@/api/booksApi.ts";
 import { useBooks } from "@/hooks/useBooks.ts";
 import Shelf from "@/components/Shelf.tsx";
 import { BookDetails } from "@/components/BookDetails.tsx";
+import { Link } from "@tanstack/react-router";
 
 export default function Dashboard() {
 	const { wantToReadBooks, currentlyReadingBooks, readBooks } = useBooks();
@@ -65,7 +66,13 @@ export default function Dashboard() {
 					book={drawer.book}
 				/>
 			</Drawer>
-			<Fab color="primary" aria-label="add">
+			<Fab
+				color="primary"
+				aria-label="add"
+				sx={{ position: "fixed", bottom: 16, right: 16 }}
+				component={Link}
+				to={"/search"}
+			>
 				<AddIcon />
 			</Fab>
 		</Box>
