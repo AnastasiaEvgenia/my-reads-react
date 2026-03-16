@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="feat: Book menu. Move books between shelves.">
+    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="feat: Fab button to navigate to search page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/queries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BookDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useBooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useBooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +161,7 @@
       <updated>1773091361833</updated>
       <workItem from="1773091363178" duration="300000" />
       <workItem from="1773650784329" duration="634000" />
-      <workItem from="1773676153759" duration="6107000" />
+      <workItem from="1773676153759" duration="7361000" />
     </task>
     <task id="LOCAL-00001" summary="fix: Quick book details display.">
       <option name="closed" value="true" />
@@ -182,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773681880724</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: Fetch books with suspense query.">
+      <option name="closed" value="true" />
+      <created>1773682394602</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773682394602</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: Fab button to navigate to search page.">
+      <option name="closed" value="true" />
+      <created>1773682614078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773682614078</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +204,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: Quick book details display." />
     <MESSAGE value="feat: Book menu. Move books between shelves." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Book menu. Move books between shelves." />
+    <MESSAGE value="fix: Fetch books with suspense query." />
+    <MESSAGE value="feat: Fab button to navigate to search page." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Fab button to navigate to search page." />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
