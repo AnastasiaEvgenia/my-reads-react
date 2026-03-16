@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="build">
+      <change beforePath="$PROJECT_DIR$/dist/assets/AppLayout-BBABFTpM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/BookCardDisplay-N4Hd5gYX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/InputBase-DXJTr2OM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Menu-CyBb67XM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Modal-DtNgEHaX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/_authenticated-Cegh0u1i.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-DA45efHu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-DIQT-2yw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/login-BfKRt7hA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/search-qtvGLtOY.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/useControlled-DOH_e63o.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/inetpub/wwwroot/udacity/react/my-reads" value="3Aj1qzu3paSTOz4MwA6fZUuzawD" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="Claude Sonnet 4.6" />
+      <entry key="agent-panel" value="Claude Sonnet 4.6" />
+    </selectedModels>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="57" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AnastasiaEvgenia&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AnastasiaEvgenia/my-reads-react.git&quot;,
+    &quot;accountId&quot;: &quot;d7c76f6e-96f2-43cc-b006-403195f55cca&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3Aj1qzu3paSTOz4MwA6fZUuzawD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/inetpub/wwwroot/udacity/react/my-reads",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.check.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.lint.executor": "Run",
+    "npm.typecheck.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\inetpub\\wwwroot\\udacity\\react\\my-reads\\node_modules\\prettier",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\inetpub\\wwwroot\\udacity\\react\\my-reads\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="check" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="typecheck" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="typecheck" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.typecheck" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.check" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="" />
+      <created>1773091361833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773091361833</updated>
+      <workItem from="1773091363178" duration="300000" />
+      <workItem from="1773650784329" duration="634000" />
+      <workItem from="1773676153759" duration="13872000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix: Quick book details display.">
+      <option name="closed" value="true" />
+      <created>1773677272437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773677272437</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Book menu. Move books between shelves.">
+      <option name="closed" value="true" />
+      <created>1773681880724</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773681880724</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: Fetch books with suspense query.">
+      <option name="closed" value="true" />
+      <created>1773682394602</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773682394602</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: Fab button to navigate to search page.">
+      <option name="closed" value="true" />
+      <created>1773682614078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773682614078</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: Display current book shelf in card menu.">
+      <option name="closed" value="true" />
+      <created>1773683760252</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773683760252</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: Search new books.">
+      <option name="closed" value="true" />
+      <created>1773689427029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773689427029</updated>
+    </task>
+    <task id="LOCAL-00007" summary="build">
+      <option name="closed" value="true" />
+      <created>1773689558563</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773689558563</updated>
+    </task>
+    <task id="LOCAL-00008" summary="build">
+      <option name="closed" value="true" />
+      <created>1773689920999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773689920999</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: Quick book details display." />
+    <MESSAGE value="feat: Book menu. Move books between shelves." />
+    <MESSAGE value="fix: Fetch books with suspense query." />
+    <MESSAGE value="feat: Fab button to navigate to search page." />
+    <MESSAGE value="feat: Display current book shelf in card menu." />
+    <MESSAGE value="feat: Search new books." />
+    <MESSAGE value="build" />
+    <option name="LAST_COMMIT_MESSAGE" value="build" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
