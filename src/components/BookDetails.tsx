@@ -4,9 +4,10 @@ import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
-import { Chip, Skeleton } from "@mui/material";
+import { Chip } from "@mui/material";
 import { useMemo } from "react";
 import type { Book } from "@/api/booksApi.ts";
+import { SkeletonLoader } from "@/components/SkeletonLoader.tsx";
 
 interface BookDetailsProps {
 	book: Book | null;
@@ -40,11 +41,7 @@ export function BookDetails({ book, handleDrawerClose }: BookDetailsProps) {
 
 			<Divider sx={{ mb: 2 }} />
 			{!book ? (
-				<>
-					<Skeleton />
-					<Skeleton />
-					<Skeleton />
-				</>
+				<SkeletonLoader />
 			) : (
 				<>
 					{imageUrl && (

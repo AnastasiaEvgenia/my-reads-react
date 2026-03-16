@@ -2,36 +2,26 @@ import { useMemo } from "react";
 import { useBooksQuery } from "@/api/queries.ts";
 
 export const useBooks = () => {
-	const {
-		data: allBooks = [],
-		isLoading,
-		isError,
-		error,
-		refetch,
-	} = useBooksQuery();
+	const { data: booksData } = useBooksQuery();
 
 	const currentlyReadingBooks = useMemo(
-		() => allBooks.filter((f) => f.shelf === "currentlyReading"),
-		[allBooks],
+		() => booksData.filter((f) => f.shelf === "currentlyReading"),
+		[booksData],
 	);
 
 	const wantToReadBooks = useMemo(
-		() => allBooks.filter((f) => f.shelf === "wantToRead"),
-		[allBooks],
+		() => booksData.filter((f) => f.shelf === "wantToRead"),
+		[booksData],
 	);
 
 	const readBooks = useMemo(
-		() => allBooks.filter((f) => f.shelf === "read"),
-		[allBooks],
+		() => booksData.filter((f) => f.shelf === "read"),
+		[booksData],
 	);
 
 	return {
 		currentlyReadingBooks,
 		wantToReadBooks,
 		readBooks,
-		isLoading,
-		isError,
-		error,
-		refetch,
 	};
 };

@@ -1,15 +1,14 @@
 import Grid from "@mui/material/Grid";
-import { Box, Drawer } from "@mui/material";
+import { Box, Drawer, Fab } from "@mui/material";
 import { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
 import type { Book } from "@/api/booksApi.ts";
 import { useBooks } from "@/hooks/useBooks.ts";
 import Shelf from "@/components/Shelf.tsx";
 import { BookDetails } from "@/components/BookDetails.tsx";
-import { SkeletonLoader } from "@/components/SkeletonLoader.tsx";
 
 export default function Dashboard() {
-	const { wantToReadBooks, currentlyReadingBooks, readBooks, isLoading } =
-		useBooks();
+	const { wantToReadBooks, currentlyReadingBooks, readBooks } = useBooks();
 	const [drawer, setDrawer] = useState<{ open: boolean; book: Book | null }>({
 		open: false,
 		book: null,
@@ -33,37 +32,25 @@ export default function Dashboard() {
 		<Box>
 			<Grid container spacing={2}>
 				<Grid size={12}>
-					{isLoading ? (
-						<SkeletonLoader />
-					) : (
-						<Shelf
-							title={"Currently Reading"}
-							books={currentlyReadingBooks}
-							handleCardClick={handleCardClick}
-						/>
-					)}
+					<Shelf
+						title={"Currently Reading"}
+						books={currentlyReadingBooks}
+						handleCardClick={handleCardClick}
+					/>
 				</Grid>
 				<Grid size={12}>
-					{isLoading ? (
-						<SkeletonLoader />
-					) : (
-						<Shelf
-							title={"Want To Read"}
-							books={wantToReadBooks}
-							handleCardClick={handleCardClick}
-						/>
-					)}
+					<Shelf
+						title={"Want To Read"}
+						books={wantToReadBooks}
+						handleCardClick={handleCardClick}
+					/>
 				</Grid>
 				<Grid size={12}>
-					{isLoading ? (
-						<SkeletonLoader />
-					) : (
-						<Shelf
-							title={"Read"}
-							books={readBooks}
-							handleCardClick={handleCardClick}
-						/>
-					)}
+					<Shelf
+						title={"Read"}
+						books={readBooks}
+						handleCardClick={handleCardClick}
+					/>
 				</Grid>
 			</Grid>
 			{/* Side Drawer with Full Book Info */}
@@ -78,6 +65,9 @@ export default function Dashboard() {
 					book={drawer.book}
 				/>
 			</Drawer>
+			<Fab color="primary" aria-label="add">
+				<AddIcon />
+			</Fab>
 		</Box>
 	);
 }

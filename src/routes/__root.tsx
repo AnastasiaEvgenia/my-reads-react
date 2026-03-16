@@ -19,18 +19,18 @@ export const Route = createRootRouteWithContext<{
 			}}
 		>
 			<Outlet />
-			<TanStackDevtools
-				config={{
-					position: "bottom-right",
-				}}
-				plugins={[
-					{
-						name: "Tanstack Router",
-						render: <TanStackRouterDevtoolsPanel />,
-					},
-				]}
-			/>
-			<ReactQueryDevtools buttonPosition="bottom-left" />
+			{/*<TanStackDevtools*/}
+			{/*	config={{*/}
+			{/*		position: "bottom-right",*/}
+			{/*	}}*/}
+			{/*	plugins={[*/}
+			{/*		{*/}
+			{/*			name: "Tanstack Router",*/}
+			{/*			render: <TanStackRouterDevtoolsPanel />,*/}
+			{/*		},*/}
+			{/*	]}*/}
+			{/*/>*/}
+			{/*<ReactQueryDevtools buttonPosition="bottom-left" />*/}
 		</Box>
 	),
 	notFoundComponent: () => <>Not Found</>,

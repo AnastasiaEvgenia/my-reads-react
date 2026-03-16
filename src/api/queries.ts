@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useSuspenseQuery } from "@tanstack/react-query";
 import { getAll } from "@/api/booksApi.ts";
 import { booksKeys } from "@/api/keys.ts";
 
@@ -10,5 +10,5 @@ export function booksQueryOptions() {
 }
 
 export function useBooksQuery() {
-	return useQuery(booksQueryOptions());
+	return useSuspenseQuery(booksQueryOptions());
 }
