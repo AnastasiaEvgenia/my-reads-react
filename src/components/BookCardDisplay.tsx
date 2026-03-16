@@ -10,6 +10,7 @@ import {
 
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import * as React from "react";
+import { useDraggable } from "@dnd-kit/react";
 import type { Book } from "@/api/booksApi.ts";
 import BookImageDisplay from "@/components/BookImageDisplay.tsx";
 import { BookMenu } from "@/components/BookMenu.tsx";
@@ -18,6 +19,10 @@ import { DrawerContext } from "@/components/AppLayout.tsx";
 export default function BookCardDisplay({ book }: { book: Book }) {
 	const { handleCardClick } = useContext(DrawerContext);
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+	const { ref } = useDraggable({
+		id: book.id,
+	});
 
 	const menuOpen = Boolean(anchorEl);
 
@@ -34,7 +39,7 @@ export default function BookCardDisplay({ book }: { book: Book }) {
 		book.imageLinks?.thumbnail || book.imageLinks?.smallThumbnail || null;
 
 	return (
-		<>
+		<Box ref={ref}>
 			<Card
 				sx={{
 					height: "100%",
@@ -203,6 +208,6 @@ export default function BookCardDisplay({ book }: { book: Book }) {
 				anchorEl={anchorEl}
 				handleMenuClose={handleMenuClose}
 			/>
-		</>
+		</Box>
 	);
 }
