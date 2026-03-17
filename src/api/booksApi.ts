@@ -51,6 +51,12 @@ export interface Book {
 
 type HeadersObject = Record<string, string>;
 
+export type ShelfMap = {
+	currentlyReading: Array<string>;
+	wantToRead: Array<string>;
+	read: Array<string>;
+};
+
 let token = localStorage.token as string | undefined;
 
 if (!token) token = localStorage.token = Math.random().toString(36).slice(-8);
@@ -73,7 +79,7 @@ export const getAll = (): Promise<Array<Book>> =>
 export const update = (
 	bookId: string,
 	shelf: Shelf | string,
-): Promise<unknown> =>
+): Promise<ShelfMap> =>
 	fetch(`${api}/books/${bookId}`, {
 		method: "PUT",
 		headers: {

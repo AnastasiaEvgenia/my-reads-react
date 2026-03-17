@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="build">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HideOnScroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HideOnScroll.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="chore: Add missing dependency for @emotion/react.">
+      <change beforePath="$PROJECT_DIR$/src/api/booksApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/booksApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/mutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/mutations.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +182,7 @@
       <workItem from="1773650784329" duration="634000" />
       <workItem from="1773676153759" duration="16301000" />
       <workItem from="1773692863054" duration="5624000" />
-      <workItem from="1773781148553" duration="665000" />
+      <workItem from="1773781148553" duration="2378000" />
     </task>
     <task id="LOCAL-00001" summary="fix: Quick book details display.">
       <option name="closed" value="true" />
@@ -345,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773698248471</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="chore: Add missing dependency for @emotion/react.">
+      <option name="closed" value="true" />
+      <created>1773782054639</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1773782054639</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +374,8 @@
     <MESSAGE value="fix: Prevent from dropping book on the same shelf. Disable menu button for current book shelf." />
     <MESSAGE value="fix: Display none option selected on search page when book doesn't belong to a shelf." />
     <MESSAGE value="build" />
-    <option name="LAST_COMMIT_MESSAGE" value="build" />
+    <MESSAGE value="chore: Add missing dependency for @emotion/react." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: Add missing dependency for @emotion/react." />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
