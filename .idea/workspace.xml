@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="chore: Add missing dependency for @emotion/react.">
-      <change beforePath="$PROJECT_DIR$/src/api/booksApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/booksApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/mutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/mutations.ts" afterDir="false" />
+    <list default="true" id="85f5fe43-cbfb-4bc3-ae15-1ea6f30c0409" name="Changes" comment="fix: Update tanstack query cache on book update, instead of triggering refetch.">
+      <change beforePath="$PROJECT_DIR$/dist/assets/AppLayout-kS0VhMMW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/BookCardDisplay-gW9rSJ_P.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/InputBase-vG0lzs-t.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Menu-CNdEufyT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Modal-BfUUDWkV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/_authenticated-DG1VX_xa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-CccuBPMc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-MMulRA12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/login-CFnuPzxq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/search-2LUfjTNm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/useControlled-CQS05Vi1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +113,7 @@
   <component name="RecapUselessUpdatesCounter">
     <option name="suspendCountdown" value="9" />
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -156,9 +166,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.deploy" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.typecheck" />
         <item itemvalue="npm.lint" />
       </list>
@@ -182,7 +192,7 @@
       <workItem from="1773650784329" duration="634000" />
       <workItem from="1773676153759" duration="16301000" />
       <workItem from="1773692863054" duration="5624000" />
-      <workItem from="1773781148553" duration="2378000" />
+      <workItem from="1773781148553" duration="2892000" />
     </task>
     <task id="LOCAL-00001" summary="fix: Quick book details display.">
       <option name="closed" value="true" />
@@ -352,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773782054639</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix: Update tanstack query cache on book update, instead of triggering refetch.">
+      <option name="closed" value="true" />
+      <created>1773783600002</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1773783600002</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +393,8 @@
     <MESSAGE value="fix: Display none option selected on search page when book doesn't belong to a shelf." />
     <MESSAGE value="build" />
     <MESSAGE value="chore: Add missing dependency for @emotion/react." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: Add missing dependency for @emotion/react." />
+    <MESSAGE value="fix: Update tanstack query cache on book update, instead of triggering refetch." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Update tanstack query cache on book update, instead of triggering refetch." />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
